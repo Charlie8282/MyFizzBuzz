@@ -1,0 +1,452 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Charlie's Challenges</title>
+    <meta content="" name="descriptison">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="Images/favicon.ico" rel="icon">
+    <!--<link href="Content/apple-touch-icon.png" rel="apple-touch-icon">-->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="Content/bootstrap.min.css" rel="stylesheet">
+    <link href="Content/icofont.min.css" rel="stylesheet">
+    <link href="Content/boxicons.min.css" rel="stylesheet">
+    <link href="Content/venobox.css" rel="stylesheet">
+    <link href="Content/owl.carousel.min.css" rel="stylesheet">
+    <link href="Content/aos.css" rel="stylesheet">
+    <link href="Content/prism.css" rel="stylesheet" />
+    <script src="Scripts/prism.js"></script>
+
+    <!-- Template Main CSS File -->
+    <link href="Content/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+    * Template Name: MyResume - v2.1.0
+    * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+    * Author: BootstrapMade.com
+    * License: https://bootstrapmade.com/license/
+    ======================================================== -->
+    <style>
+        .result {
+            min-height: 4rem;
+            background-color: whitesmoke;
+            text-align: center;
+            border: solid;
+            border-radius: .5rem;
+            color:black;
+        }
+
+        .curved {
+            border-radius: 2rem;
+            padding: 1rem;
+        }
+
+        .left {
+            text-align: left;
+        }
+
+        .top {
+            padding-top: 10rem;
+        }
+        .bgimage {
+            background-image: url('Images/Myfizzbuzzbg.png');
+            background-size: cover;
+        }
+        .content {
+            background-color: #4a406c;
+            border-radius: .5rem;
+            outline: solid;
+            outline-color: white;
+            outline-style: inherit;
+            color: white;
+            text-align: center;
+            align-content: center;
+        }
+        .legend {
+
+        }
+    </style>
+
+</head>
+
+<body class="bgimage">
+
+    <!-- ======= Mobile nav toggle button ======= class="mobile-nav-toggle d-xl-none"-->
+    <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button><!--Nav button fix-->
+    <!-- ======= Header ======= -->
+    <header id="header" class="justify-content-center">
+        <img src="Images/charlie-nav.png" /><br /><!--Profile picture-->
+    <br /><br />
+        <nav class="nav-menu">
+            <ul>
+                <li>
+                    <a href="https://charliestacocat.netlify.app/">
+                        <img src="Images/icons8-taco-24.png" /><span>TacocaT</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="">
+                        <img src="Images/icons8-soda-24.png" /><span>Solve</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills">
+                        <img src="Images/icons8-buildings-24.png" /> <span>Sunset Hills</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#resume">
+                        <img src="Images/icons8-ghost-24.png" /> <span>Sum of All Fears</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://dev-charlie.netlify.app/#challenges">
+                        <img src="Images/icons8-home-24.png" /><span>Back to Charlie Tincher's Portfolio</span>
+                    </a>
+                </li>
+                <li>
+                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#myModal">
+                        Read Me
+                    </button>
+                </li>
+            </ul>
+        </nav>
+        <!--<div>
+            <div class="row align-content-center">
+                <a href="https://twitter.com/charlie_tincher" target="blank">
+                    <img src="Images/icons8-twitter-circled-40.png" />
+                </a>
+                <a href="https://www.linkedin.com/in/charles-tincher-ba40671b8/" target="blank">
+                    <img src="Images/icons8-linkedin-48.png" />
+                </a>
+                <a href="https://github.com/Charlie8282" target="blank">
+                    <img src="Images/icons8-github-48.png" />
+                </a>
+            </div>
+        </div>-->
+
+
+
+
+    </header><!-- End Header -->
+    <!-- ======= Hero Section ======= -->
+    <br /><br />
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm content">
+                <h1>FizzBuzz</h1>
+                <hr />
+                <p>
+                    FizzBuzz is a great brainteaser to keep coders on their toes.  It is a poplular algorithm for coders to write a program that prints the numbers 1-100 while printing "Fizz" for multiples of a given number, "Buzz" for multiples of another given number and "FizzBuzz" for multiples of both of those.  Give it a try!
+                </p><hr />
+            </div>
+        </div>
+
+    </div>
+    <hr />
+
+    <div class="container" data-aos="fade-up">
+        
+        <div class="row content">
+            <div class="col-1"></div>
+            <div class="col-3">
+                <div class="row">
+                    <div class="col-sm-pr">
+                        <h6 class="left">Enter your numbers here:</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-pr">
+                        <input id="txtFizzBuzz1" placeholder="Fizz number" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-pr">
+                        <input id="txtFizzBuzz2" placeholder="Buzz number" />
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <br />
+                        <button class="btn-primary" id="btnFizzBuzz">Get a fizzbuzz!</button>
+                    </div>
+                </div>
+                <!--<div class="row pt-5">
+                    <div class="col-sm">
+                        <div>
+                            <p class="result"><img src="Images/finalfizz.png" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col-sm">
+                        <div>
+                            <p class="result"><img src="Images/finalbuzz.png" />
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col-sm">
+                        <div class="curved">
+                            <p class="result"><img src="Images/finalfizzbuzz.png" />
+                            </p>
+                        </div>
+                    </div>
+                </div>-->
+
+            </div>
+            <div class="col-sm">
+                <div>
+                    <p id="pFizzBuzzOut" class="result"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <span id="howMany"></span>
+    </div>
+
+
+
+
+    <!--</section>-->
+    <!--<div class="container">
+        <div class="row"></div>
+    </div>
+
+    <div class="container">
+
+        <hr />
+
+        <div class="row">
+            <div class="col"><input id="txtFizzBuzz1" /></div>
+
+
+            <div class="col"> <input id="txtFizzBuzz2" /></div>
+
+
+            <div class="col"><button id="btnFizzBuzz" class="btn bg-dark">Click Me</button></div>
+
+        </div>
+        <div class="row">
+            <p id="pFizzBuzzOut"></p>
+        </div>
+    </div>-->
+    <!--</section>--><!-- End Hero -->
+    <!-- End #main -->
+    <!-- ======= Footer ======= -->
+    <!--<footer id="footer">-->
+
+
+    <!--<div class="copyright">
+        &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">-->
+    <!-- All the links in the footer should remain intact. -->
+    <!-- You can delete the links only if you purchased the pro version. -->
+    <!-- Licensing information: [license-url] -->
+    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
+    <!--Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                Icons by <a href="https://icons8.com/icon/88601/home">by Icons8</a>
+            </div>
+        </div>
+
+    </footer>-->
+    <!-- End Footer -->
+
+    <script>
+
+        document.getElementById("btnFizzBuzz").addEventListener("click", function () {
+            let fizz = Number(document.getElementById("txtFizzBuzz1").value);
+            let buzz = Number(document.getElementById("txtFizzBuzz2").value);
+
+            let output = FizzBuzz(fizz, buzz);
+            document.getElementById("pFizzBuzzOut").innerHTML = output;
+        });
+
+        function FizzBuzz(fizz, buzz) {
+            let output = "";
+
+            for (let loop = 1; loop <= 100; loop++) {
+                let fizzRemainder = loop % fizz;
+                let buzzRemainder = loop % buzz;
+
+                if (fizzRemainder == 0 && buzzRemainder == 0) {
+                    output += `<img src="Images/Myfizzsmall.png" />, `;
+                }
+                else if (fizzRemainder == 0) {
+                    output += `<img src="Images/myfizzmall.png" />, `;
+
+                }
+                else if (buzzRemainder == 0) {
+                    output += `<img src="Images/finalbuzz24.png" />, `;
+                }
+                else {
+                    output += `${loop}, `;
+                }
+        
+            }
+            return output;
+      
+            } 
+          
+        
+
+      //testing testing testing -------------------------------------------------------------------------------------------------------------------------
+
+
+        //document.getElementById("btnFizzBuzz").addEventListener("click", function () {
+        //    let fizz = Number(document.getElementById("txtFizzBuzz1").value);
+        //    let buzz = Number(document.getElementById("txtFizzBuzz2").value);
+
+        //    let output = FizzBuzz(fizz, buzz);
+        //    document.getElementById("pFizzBuzzOut").innerHTML = output;
+        //});
+
+        //function FizzBuzz(fizz, buzz) {
+        //    let output = "";
+
+        //    for (let loop = 1; loop <= 100; loop++) {
+        //        let fizzRemainder = loop % fizz;
+        //        let buzzRemainder = loop % buzz;
+
+        //        if (fizzRemainder == 0 && buzzRemainder == 0) {
+        //            output += `<img class="curved" src="Images/fizzbuzzed.png" />, `;
+        //        }
+        //        else if (fizzRemainder == 0) {
+        //            output += `<img src="Images/fizzed.png " />, `;
+
+        //        }
+        //        else if (buzzRemainder == 0) {
+        //            output += `<img src="Images/buzzed.png " />, `;
+        //        }
+        //        else {
+        //            output += `${loop}, `;
+        //        }
+               
+        //    }
+        //    return output;
+       
+        //}
+
+
+
+
+
+        //document.getElementById("btnFizzBuzz").addEventListener("click", function () {
+        //    let fizz = Number(document.getElementById("txtFizzBuzz1").value);
+        //    let buzz = Number(document.getElementById("txtFizzBuzz2").value);
+
+        //    let output = FizzBuzz(fizz, buzz);
+        //    document.getElementById("howMany").innerHTML = output;
+        //});
+
+        //function FizzBuzz(fizz, buzz) {
+        //    let output = "";
+
+        //    for (let loop = 1; loop <= 100; loop++) {
+        //        let fizzRemainder = loop % fizz;
+        //        let buzzRemainder = loop % buzz;
+
+        //        if (fizzRemainder == 0 && buzzRemainder == 0) {
+        //            var user1 = [fizzRemainder];
+        //            var user2 = [buzzRemainder];
+        //            document.getElementById("howMany").innerHTML = user1.length && user2.length;
+        //            output += `<img class="curved" src="Images/fizzbuzzed.png" />, `;
+        //        }
+        //        else if (fizzRemainder == 0) {
+        //            output += `<img src="Images/fizzed.png " />, `;
+
+        //        }
+        //        else if (buzzRemainder == 0) {
+        //            output += `<img src="Images/buzzed.png " />, `;
+        //        }
+        //        else {
+        //            output += `${loop}, `;
+        //        }
+
+        //    }
+        //    return output;
+        //}
+
+
+    </script>
+
+
+   
+        
+
+
+
+
+
+
+
+    <!--The modal-->
+
+
+
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h4 class="modal-title">Read me coming soon!</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <div class="modal-body">
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Vendor JS Files -->
+    <script src="Scripts/jquery.min.js"></script>
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+    <script src="Scripts/jquery.easing.min.js"></script>
+    <script src="Scripts/validate.js"></script>
+    <script src="Scripts/jquery.waypoints.min.js"></script>
+    <script src="Scripts/counterup.min.js"></script>
+    <script src="Scripts/isotope.pkgd.min.js"></script>
+    <script src="Scripts/venobox.min.js"></script>
+    <script src="Scripts/owl.carousel.min.js"></script>
+    <script src="Scripts/typed.min.js"></script>
+    <script src="Scripts/aos.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="/Scripts/main.js"></script>
+
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
+
